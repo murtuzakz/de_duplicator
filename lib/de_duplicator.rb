@@ -28,4 +28,9 @@ class DeDuplicator
     @base_list -= @new_additions
   end
 
+  def clear!
+  	@base_list = []
+  	@new_additions = []
+  	return self
+  end
 end
